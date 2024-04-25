@@ -15,7 +15,7 @@ class ServiceProvider implements ServiceProviderInterface
 {
     public function register(Container $pimple)
     {
-        $pimple['user'] = static function ($pimple) {
+        $pimple['member'] = static function ($pimple) {
             return new Member($pimple['config']->get('app-key'), $pimple['config']->get('app-secret'), $pimple['config']->get('app-token'), $pimple['config']->get('url'));
         };
     }

@@ -6,7 +6,7 @@
  */
 
 
-namespace shaoyv8\dmall\Member;
+namespace shaoyv8\dmall\Card;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -15,7 +15,7 @@ class ServiceProvider implements ServiceProviderInterface
 {
     public function register(Container $pimple)
     {
-        $pimple['user'] = static function ($pimple) {
+        $pimple['card'] = static function ($pimple) {
             return new Card($pimple['config']->get('app-key'), $pimple['config']->get('app-secret'), $pimple['config']->get('app-token'), $pimple['config']->get('url'));
         };
     }

@@ -28,7 +28,7 @@ class Api extends AbstractAPI
         $this->appKey = $appKey;
         $this->appSecret = $appSecret;
         $this->accessToken = $accessToken;
-        $this->signature = new Signature($this->appKey,$this->appSecret, $this->accessToken);
+        $this->signature = new Signature($this->appKey,$this->appSecret,$this->accessToken);
     }
 
     /** 
@@ -42,7 +42,7 @@ class Api extends AbstractAPI
     public function request($path, $params = [])    
     {
         $curl = curl_init();
-        $timestamp = date('yyyy-MM-dd HH:mm:ss');
+        $timestamp = date('Y-m-d H:m:s');
         curl_setopt($curl, CURLOPT_HEADER, 0);
         curl_setopt($curl, CURLOPT_HTTPHEADER, [
             "app-key: ".$this->appKey,

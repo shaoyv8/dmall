@@ -13,7 +13,10 @@ use Hanson\Foundation\Foundation;
 class Dmall extends Foundation
 {
     protected $providers = [
-       Member\ServiceProvider::class, 
+        Card\ServiceProvider::class, 
+        Member\ServiceProvider::class,
+        Order\ServiceProvider::class,
+        Ware\ServiceProvider::class, 
     ];
 
 }
