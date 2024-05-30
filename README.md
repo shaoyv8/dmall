@@ -4,7 +4,7 @@
 ## 安装
 
 ```
-composer require shaoyv8/dmall:dev-master
+composer require shaoyv8/dmall:dev-main
 ```
 
 ## 文档
