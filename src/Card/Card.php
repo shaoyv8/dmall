@@ -6,12 +6,14 @@
  */
 
 
-namespace shaoyv8\dmall\Member;
+namespace shaoyv8\dmall\Card;
 
-
+use Carbon\Carbon;
 use shaoyv8\dmall\Api;
 
 class Card extends Api
 {
-    
+    public function index(){
+        return 'card index';
+    } 
 }

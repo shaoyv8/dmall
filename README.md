@@ -12,7 +12,7 @@ composer require shaoyv8/dmall:dev-main
 ### 实例化
 
 ```php
-$dmall = new \shaoyv8\dmall\Dmall([
+$dmall = new \shaoyv8\dmall\dmall([
     'url' => 'your-url',
     'app-key' => 'your-app-key',
     'app-secret' => 'your-app-secret',

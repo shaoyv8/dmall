@@ -6,7 +6,7 @@
  */
 
 
-namespace shaoyv8\dmall\Member;
+namespace shaoyv8\dmall\Order;
 
 
 use shaoyv8\dmall\Api;

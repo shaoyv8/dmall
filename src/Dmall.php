@@ -10,13 +10,20 @@ namespace shaoyv8\dmall;
 
 use Hanson\Foundation\Foundation;
 
+/**
+ * Class dmall
+ * @package shaoyv8\dmall
+ * @property \shaoyv8\dmall\Card\Card $card
+ * @property \shaoyv8\dmall\Member\Member $member
+ * @property \shaoyv8\dmall\Order\Order $order
+ * @property \shaoyv8\dmall\Ware\Ware  $ware
+ */
 class Dmall extends Foundation
 {
-    protected $providers = [
+    public $providers = [
         Card\ServiceProvider::class, 
         Member\ServiceProvider::class,
         Order\ServiceProvider::class,
         Ware\ServiceProvider::class, 
     ];
-
 }
